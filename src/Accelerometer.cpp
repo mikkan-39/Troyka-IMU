@@ -34,7 +34,7 @@ void Accelerometer::setRange(AccelerometerRange range) {
         break;
     }
     default: {
-        _scalingFactor = SENS_2G * 4 / pow(2, 16);
+        _scalingFactor = SENS_2G;
     } break;
     }
     _writeByte(BASE_IMU_CTRL_REG4, data);
